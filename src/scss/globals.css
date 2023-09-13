@@ -1,0 +1,63 @@
+:root {
+  --navy-shadow: rgba(2, 12, 27, 0.7);
+  --background-color: #f3f3f3; /* Light Grey */
+  --lightest-navy: rgba(35, 53, 84, 0.5);;
+  --light-navy: #112240;
+  --dark-slate: #2b2b2b; /* Dark Grey */
+  --slate: #4d4d4d; /* Grey */
+  --light-slate: #6a6a6a; /* Light Dark Grey */
+  --lightest-slate: #a8b2d1;
+  --theme-color: #007acc; /* Blue */
+}
+
+::-moz-selection {
+  color: white;
+  background: var(--theme-color);
+}
+
+::selection {
+  color: white;
+  background: var(--theme-color);
+}
+
+html,
+body {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background-color: var(--background-color);
+  counter-reset: title;
+}
+
+main {
+  transition: 0.3s ease-in-out;
+}
+
+.blur {
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--dark-slate) var(--background-color);
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark-slate);
+  border: 3px solid var(--background-color);
+  border-radius: 10px;
+}
